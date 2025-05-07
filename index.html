@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shantala Ice Creams</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Roboto', sans-serif;
+    }
+    body {
+      background-color: #fff8f0;
+      color: #333;
+    }
+    header {
+      background-color: #fff;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      animation: slideDown 1s ease-in-out;
+    }
+    @keyframes slideDown {
+      from { transform: translateY(-100%); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+    header h1 {
+      color: #c0392b;
+      font-size: 2.5em;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      background-color: #f9e7e7;
+      padding: 10px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav a {
+      text-decoration: none;
+      color: #c0392b;
+      font-weight: bold;
+      transition: transform 0.3s, color 0.3s;
+    }
+    nav a:hover {
+      transform: scale(1.1);
+      color: #8e0000;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+      opacity: 0;
+      animation: fadeIn 1s ease forwards;
+    }
+    @keyframes fadeIn {
+      to { opacity: 1; }
+    }
+    .home {
+      background: url('fc873064-3067-4d6b-8a0a-e39266deaa66.png') center/cover no-repeat;
+      color: white;
+      text-align: center;
+      padding-top: 80px;
+      padding-bottom: 80px;
+    }
+    .home h2 {
+      font-size: 2.5em;
+      background-color: rgba(0, 0, 0, 0.5);
+      display: inline-block;
+      padding: 10px 20px;
+      border-radius: 10px;
+      animation: zoomIn 1s ease forwards;
+      color: #ffddcc;
+    }
+    @keyframes zoomIn {
+      from { transform: scale(0.8); opacity: 0; }
+      to { transform: scale(1); opacity: 1; }
+    }
+    .home p {
+      font-size: 1.2em;
+      margin-top: 20px;
+      background-color: rgba(0, 0, 0, 0.4);
+      display: inline-block;
+      padding: 10px 15px;
+      border-radius: 8px;
+    }
+    .about p {
+      font-size: 1.5em;
+      line-height: 1.8;
+    }
+    .menu h3 {
+      margin-top: 20px;
+      color: #8e44ad;
+    }
+    .menu ul {
+      list-style: none;
+      padding: 0;
+    }
+    .menu li {
+      margin: 8px 0;
+      padding: 8px;
+      background-color: #f0f0f0;
+      border-radius: 6px;
+      transition: background-color 0.3s, transform 0.2s;
+    }
+    .menu li:hover {
+      background-color: #e0e0e0;
+      transform: translateX(5px);
+    }
+    .menu a {
+      text-decoration: none;
+      color: #333;
+    }
+    .contact {
+      background-color: #f7f1e3;
+    }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+    .gallery img {
+      width: 300px;
+      height: auto;
+      border-radius: 10px;
+      transition: transform 0.3s;
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+    footer {
+      background-color: #c0392b;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+    .order-btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #e74c3c;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      transition: background-color 0.3s, transform 0.3s;
+    }
+    .order-btn:hover {
+      background-color: #c0392b;
+      transform: scale(1.1);
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Shantala Ice Creams</h1>
+    <a href="https://www.zomato.com/bangalore/shanthala-icecreams-rajajinagar" class="order-btn">Order Now</a>
+  </header>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About Us</a>
+    <a href="#menu">Menu</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section class="home" id="home">
+    <h2>Serving Love Behind Every Scoop</h2>
+    <p>Delicious homemade flavours served with love since the beginning.</p>
+  </section>
+
+  <section class="about" id="about">
+    <h2>About Us</h2>
+    <p>
+      Shantala Ice Creams was started by a loving Grandpa and Grandma who shared a deep passion for ice creams. 
+      With just a small fridge and big dreams, they began their journey serving delicious flavours to their neighbourhood. 
+      Today, their legacy is carried forward by their son and grandson, offering a wide variety of creative and tasty ice creams that bring joy to every bite.
+    </p>
+  </section>
+
+  <section class="menu" id="menu">
+    <h2>Our Menu</h2>
+    <h3>Popular Flavours</h3>
+    <ul>
+      <li><a href="https://www.zomato.com/bangalore/shanthala-icecreams-rajajinagar">Golden Brownie - ₹160</a></li>
+      <li><a href="https://www.zomato.com/bangalore/shanthala-icecreams-rajajinagar">Shantala Special - ₹150</a></li>
+      <li><a href="https://www.zomato.com/bangalore/shanthala-icecreams-rajajinagar">Death by Chocolate - ₹130</a></li>
+      <li><a href="https://www.zomato.com/bangalore/shanthala-icecreams-rajajinagar">Belgian Chocolate - ₹130</a></li>
+      <li><a href="https://www.zomato.com/bangalore/shanthala-icecreams-rajajinagar">Fruit Salad Ice Cream - ₹110</a></li>
+      <li><a href="https://www.zomato.com/bangalore/shanthala-icecreams-rajajinagar">Chocolate Crunch - ₹140</a></li>
+      <li><a href="https://www.zomato.com/bangalore/shanthala-icecreams-rajajinagar">Dry Fruit Delight - ₹150</a></li>
+    </ul>
+  </section>
+
+  <section class="gallery" id="gallery">
+    <h2>Gallery</h2>
+    <img src="Icecream1.webp" alt="Gallery Image 1">
+    <img src="Icecream-2.webp" alt="Gallery Image 2">
+    <img src="Icecream-3.webp" alt="Gallery Image 3">
+    <img src="Icecream-4.webp" alt="Gallery Image 4">
+    <img src="Icecream-5.webp" alt="Gallery Image 5">
+  </section>
+
+  <section class="contact" id="contact">
+    <h2>Contact Us</h2>
+    <p><strong>Address:</strong> No 4y 38 59th Cross, 20th Main Rd, 3rd Block, Rajajinagar, Bengaluru, Karnataka 560010</p>
+    <p><strong>Hours:</strong> Closed ⋅ Opens 12 pm</p>
+    <p><strong>Phone:</strong> 095389 03695</p>
+  </section>
+
+  <footer>
+    &copy; 2025 Shantala Ice Creams. All Rights Reserved.
+  </footer>
+
+</body>
+</html>
